@@ -1,0 +1,48 @@
+:root{
+  --bg-primary:#fff;
+  --text-primary: #0B123B;
+  --text-secondary:#f2efff;
+  --btn-primary: #ffb800;
+
+}
+
+body{
+  margin: 0;
+
+}
+
+header {
+  background:linear-gradient(#0B123B, #1a133B);
+  color: var(--text-secondary);
+  font-size: 18px;
+}
+
+header nav {
+  padding: 10px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav h1 {
+  margin: 0;
+}
+
+header nav div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header nav div p {
+  padding: 0 15px 0 0;
+
+}
+
+header nav div .btn-contact {
+  padding: 10px 10px;
+  background-color: var(--text-primary);
+  border: 1px solid var(--btn-primary);
+  color: var(--btn-primary)
+}
