@@ -1,48 +1,46 @@
-:root{
-  --bg-primary:#fff;
-  --text-primary: #0B123B;
-  --text-secondary:#f2efff;
-  --btn-primary: #ffb800;
-
+@font-face {
+  font-family: fontPrimaryRegular;
+  src: url('../font/AmaticSC-Regular.ttf');
 }
 
-body{
-  margin: 0;
-
+@font-face {
+  font-family: fontPrimaryBold;
+  src: url('../font/AmaticSC-Bold.ttf');
 }
 
-header {
-  background:linear-gradient(#0B123B, #1a133B);
-  color: var(--text-secondary);
-  font-size: 18px;
+@font-face {
+  font-family: fontSecondaryBold;
+  src: url('../font/Playlist\ Caps.otf');
+}
+
+body {
+  font-family: fontPrimaryRegular;
+  margin: 0 15px;
 }
 
 header nav {
-  padding: 10px 15px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-header nav h1 {
-  margin: 0;
-}
-
-header nav div {
+header nav .head-left {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
-header nav div p {
-  padding: 0 15px 0 0;
-
+header nav .head-left h1 {
+  font-family: fontPrimaryBold;
+  font-weight: bolder;
+  font-size: xx-large;
+  font-stretch: ultra-expanded;
+  margin-right: 15px;
+  padding: 5px 15px 5px 15px;
+  border: 1px solid black;
+  border-radius: 50%;
 }
 
-header nav div .btn-contact {
-  padding: 10px 10px;
-  background-color: var(--text-primary);
-  border: 1px solid var(--btn-primary);
-  color: var(--btn-primary)
-}
