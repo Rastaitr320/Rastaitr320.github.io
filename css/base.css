@@ -13,23 +13,43 @@
   src: url('../font/Playlist\ Caps.otf');
 }
 
+:root {
+  --bg-primary: #f7f7f7;
+  --color-secondary: #777b7e;
+}
+
 body {
   /* font-family: fontPrimaryRegular; */
   margin: 0;
+  background: var(--bg-primary);
+
+}
+
+header {
+  /* background-image: url("../images/1.png"); */
+  background-size:auto;
+  background-repeat: no-repeat;
+  
 }
 
 header nav {
-  padding: 30px 3% 0 3%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  /* height: calc(10vh); */
 }
 
 header nav .head-left {
   display: flex;
   flex-direction: row;
   align-items: center;
+  padding-left: 15px;
 }
 
 nav .head-left h1 {
@@ -41,6 +61,7 @@ nav .head-left h1 {
   padding: 5px 15px 5px 15px;
   border: 1px solid black;
   border-radius: 50%;
+  /* display:inherit; */
 }
 
 .head-left .desc {
@@ -53,6 +74,15 @@ nav .head-left .desc h2 {
   font-size: 25px;
   margin: 0;
   padding-bottom: 2px;
+}
+
+nav .head-left .desc i {
+  color: var(--color-secondary);
+
+}
+
+nav img {
+  padding-right: 15px;
 }
 
 
@@ -68,6 +98,67 @@ nav .head-left .desc h2 {
   }
 
 }  
+
+
+/* section presentation  */
+.banner-one {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: left;
+}
+
+.banner-one .banner-img {
+  background-image: url('../images/8.jpeg');
+  object-fit: contain;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+}
+
+.banner-one .description {
+  width: 40%;
+  position:absolute;
+  top: 35%;
+  left: 10%;
+}
+
+.banner-one .description h1 ,
+.banner-one .description h2,
+.banner-one .description span {
+  margin-bottom: 5px;
+} 
+
+
+.banner-one .description h1 {
+  color: var(--color-secondary);
+  
+}
+
+.banner-one .description h2 {
+  font-family: fontPrimaryRegular;
+  font-size: 40px;
+
+}
+
+.banner-one .description h1 {
+  font-size: 20px;
+}
+
+.banner-one .description span {
+  color: var(--color-secondary);
+  font-size: 15px;
+  text-align:start;
+  text-justify: inter-word;
+}
+
+
 
 
 
