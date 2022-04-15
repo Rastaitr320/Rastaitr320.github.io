@@ -42,7 +42,7 @@ header {
   position: relative;
   top:0;
   left: 0;
-  
+  height: calc(100vh);
 }
 
 header .banner-img {
@@ -59,11 +59,13 @@ header .banner-img {
 }
 
 header nav {
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10%;
+  width: -webkit-fill-available;
 }
 
 header nav .head-left {
@@ -152,6 +154,7 @@ header .presentation {
 header .presentation {
   width: 40%;
   padding-left: 80px;
+  padding-top:28%;
 }
 
 header .presentation h5 {
@@ -190,7 +193,7 @@ header .presentation p a:hover {
 @media screen and (max-width: 640px) {
 
   header .presentation {
-    padding: 15% 18px 0 18px;
+    padding: 78% 18px 0 18px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -243,7 +246,7 @@ header .presentation p a:hover {
 @media screen and (max-width: 375px) {
 
   header .presentation {
-    padding: 28% 18px 0 18px;
+    padding: 80% 18px 0 18px;
   }
   
   header .presentation p {
@@ -256,7 +259,7 @@ header .presentation p a:hover {
 @media screen and (max-width: 280px) {
 
   header .presentation {
-    padding: 38% 18px 0 18px;
+    padding: 88% 18px 0 18px;
   }
   
   header .presentation h5 {
@@ -269,6 +272,14 @@ header .presentation p a:hover {
   }
   
 }
+
+
+
+/* a propos */
+
+
+
+
 
 
 

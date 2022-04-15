@@ -45,5 +45,35 @@
       </p>
     </div>
   </header>
+  <section class="apropos">
+    <h3>Mes compétences</h3>
+    <div class="skills">
+
+    </div>
+  </section>
 </body>
+<script src="node_modules/TagCloud/dist/TagCloud.min.js"></script>
+<script>
+  const container = '.skills';
+  const texts = [
+      'Python', 'PHP', 'JavaScript',
+      'CSS3', 'HTML5', 'ReactJS',
+      'NodeJS', 'Laravel', 'Django',
+      'RESTFull API', 'ExpressJS', 'Git',
+      'SQL', 'Système de recommendation', 'Neo4J',
+      'PostgreSQL', 'MySQL', 'Linux',
+      'Bootstrap'
+  ];
+  const options = {
+    radius: 300,
+    maxSpeed: 'fast',
+    initSpeed: 'fast',
+    keep: true
+  };
+
+  TagCloud(container, texts, options);
+  var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
+  var random_color = colors[Math.floor(Math.random() * colors.length)];
+  document.querySelector('.skills').style.color = random_color;
+</script>
 </html>
