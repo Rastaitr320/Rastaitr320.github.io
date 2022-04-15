@@ -110,7 +110,11 @@ nav img {
 
 /* Responsie menu */
 @media screen and (max-width: 640px) {
-
+  
+  header nav {
+    margin-bottom: 40%;
+  }
+  
   nav .head-left h1 {
     display: none;
   }
@@ -121,30 +125,150 @@ nav img {
 
 }  
 
+@media screen and (max-width: 280px) {
+  nav .head-left .desc i {
+    font-size: 8.5px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  nav .head-left .desc i {
+    font-size: 8.5px;
+  }
+  
+}
+
 
 /* section presentation  */
 
 header .presentation {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: space-between;
   align-items: center;
 }
 
-header .presentation .left {
-  flex-basis: 40%;
+header .presentation {
+  width: 40%;
   padding-left: 80px;
 }
 
-header .presentation .left h5,
-header .presentation .left span {
+header .presentation h5 {
+  display: none;
+}
+
+header .presentation h2 {
+  color: #1d2836;
+}
+
+header .presentation h5,
+header .presentation span {
   font-family: fontPoppinsLight;
   color: var(--color-secondary);
   font-size: 13px;
 }
 
+header .presentation p a {
+  text-decoration: none;
+  /* color: #2e4e79;
+   */
+   color: #1d2836;
+   font-weight: bolder;
+}
 
+
+header .presentation p a:hover {
+
+  border-bottom: 1px solid black;
+  transform:translate(2, 5);
+  animation: step-end;
+}
+
+/* responsive presentation */
+
+@media screen and (max-width: 640px) {
+
+  header .presentation {
+    padding: 15% 18px 0 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: fit-content;
+  }
+
+  header .presentation h2 {
+    display: none;
+  }
+
+  header .presentation span {
+    display: none;
+  }
+
+  header .presentation h5 {
+    display: block;
+    flex-basis: 52%;
+    font-size: 14px;
+    text-align: justify;
+
+  }
+
+  header .presentation p {
+    font-size: 14px;
+    flex-basis: 100%;
+    text-align: justify;
+  }
+
+  header .presentation p a {
+    padding: 14px;
+    color: #ffffff;
+    font-family:fontPoppinsLight ;
+  }
+
+  header .presentation p #cv {
+    background: #2e4e70;
+
+  }
+
+  header .presentation p #plus {
+
+    border: 1px solid #2e4e70;
+    color: #2e4e70;
+
+    
+  }
+
+}  
+
+@media screen and (max-width: 375px) {
+
+  header .presentation {
+    padding: 28% 18px 0 18px;
+  }
+  
+  header .presentation p {
+    font-size: 10px;
+  }
+  
+}
+
+
+@media screen and (max-width: 280px) {
+
+  header .presentation {
+    padding: 38% 18px 0 18px;
+  }
+  
+  header .presentation h5 {
+    font-size: 13px;
+    text-align: start;
+  }
+  
+  header .presentation p {
+    font-size: 8px;
+  }
+  
+}
 
 
 
