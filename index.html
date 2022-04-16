@@ -46,9 +46,32 @@
     </div>
   </header>
   <section class="apropos">
-    <h3>Mes compétences</h3>
     <div class="skills">
 
+    </div>
+    <div class="about">
+      <h3>A propos de moi</h3>
+      <p>Passionné du développement informatiques.
+        Confiez-moi votre projet informatiques si la techonologie que vous desiriez utiliser dans votre 
+        projet se présente ci-après !!!
+      </p>
+      <span>
+        
+      </span>
+      <p>
+        <a href="mailto:rastaitrbeatz320@gmail.com">rastaitrbeatz320@gmail.com</a>
+        <a href="https://github.com/Rastaitr320/Rastaitr320">github</a>
+        <a href="https://www.linkedin.com/in/tolonjanahary-nandrasanaela-daniel-aim%C3%A9-568193192/">linkdin</a>
+      </p>
+      <button>Téléchargez mon cv</button>
+    </div>
+  </section>
+  <section class="realisations">
+    <div class="professionnel">
+      <h3>Projet réalisé au sein des entreprises public et privée</h3>
+    </div>
+    <div class="perso">
+      <h3>Projet personnel</h3>
     </div>
   </section>
 </body>
@@ -62,18 +85,19 @@
       'RESTFull API', 'ExpressJS', 'Git',
       'SQL', 'Système de recommendation', 'Neo4J',
       'PostgreSQL', 'MySQL', 'Linux',
-      'Bootstrap'
+      'Bootstrap', 'MongoDB'
   ];
   const options = {
-    radius: 300,
-    maxSpeed: 'fast',
-    initSpeed: 'fast',
+    radius: 200,
+    maxSpeed: 'medium',
+    initSpeed: 'medium',
+    direction: 135,
     keep: true
   };
 
   TagCloud(container, texts, options);
   var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
   var random_color = colors[Math.floor(Math.random() * colors.length)];
-  document.querySelector('.skills').style.color = random_color;
+  document.querySelector('.skills').style.color = '01A6F0';
 </script>
 </html>
