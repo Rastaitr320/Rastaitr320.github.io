@@ -107,8 +107,39 @@ nav .head-left .desc i {
 
 }
 
-nav img {
-  padding-right: 15px;
+nav .nav-bar {
+  width: 40px;
+  display: block;
+  padding-left: 15px;
+  transform: rotate(-180deg);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+nav .nav-bar div {
+  height: 4px !important;
+  background: black;
+  border-radius: 25px;
+  margin: 7px 0px 7px 0px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transform: translateX(-120deg);
+}
+
+nav .nav-bar .bar-one {
+  width: 30px;
+}
+
+nav .nav-bar .bar-two {
+  width: 18px;
+}
+
+nav .nav-bar .bar-three {
+  width: 37px;
+}
+
+nav .nav-bar:hover div {
+  width: 45px;
 }
 
 
