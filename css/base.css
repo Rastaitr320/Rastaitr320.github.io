@@ -53,7 +53,7 @@ header .banner-img {
   display: block;
   width: 100%;
   height: calc(100vh);
-  background:  linear-gradient(0deg, rgba(0, 0, 0, .5) 0 , rgba(0,0,0,.3)), url('../images/8.jpeg');
+  background:  linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0 , rgba(0,0,0,.7)), url('../images/6.png');
   background-attachment: fixed;
   background-position: center;
   background-size:auto, cover;
@@ -75,7 +75,6 @@ header nav .head-left {
   flex-direction: row;
   align-items: center;
   padding-left: 15px;
-  color: #f7f7f7;
 }
 
 nav .head-left h1 {
@@ -85,14 +84,14 @@ nav .head-left h1 {
   font-stretch: ultra-expanded;
   margin-right: 15px;
   padding: 5px 15px 5px 15px;
+  border: 1px solid black;
   border-radius: 50%;
-  background: #2a384d;
+  /* display:inherit; */
 }
 
 .head-left .desc {
   display: flex;
   flex-direction: column;
-  color: #2a384d;
 }
 
 nav .head-left .desc h2 {
@@ -183,12 +182,10 @@ header .presentation {
   display: grid;
   justify-content: space-between;
   align-items: center;
-  /* transition: all 0.5s;
-  -webkit-transition: all 0.5s; */
 }
 
 header .presentation {
-  width: 52%;
+  width: 40%;
   padding-left: 80px;
   padding-top:28%;
 }
@@ -198,11 +195,7 @@ header .presentation h5 {
 }
 
 header .presentation h2 {
-  color: #f7f7f7;
-}
-
-header .presentation h2 i {
-  font-family: fontPoppinsMedium;
+  color: #1d2836;
 }
 
 header .presentation h5,
@@ -214,29 +207,10 @@ header .presentation span {
 
 header .presentation p a {
   text-decoration: none;
-  color: #1d2836;
-  font-weight: bolder;
-  font-size: 15px;
-}
-
-header .presentation p #plus {
-  border: 1px solid #f7f7f7;
-  background:#f7f7f7;
-  padding: 12px;
-}
-
-header .presentation p #cv {
-  border:1px solid #f7f7f7;
-  color: #f7f7f7 !important;
-  padding: 12px;
-}
-
-header .presentation p #cv:hover {
-  border: 1px solid #f7f7f7;
-  color: #f7f7f7 !important;
-  padding: 12px;
-  animation: border 1.5s ;
-
+  /* color: #2e4e79;
+   */
+   color: #1d2836;
+   font-weight: bolder;
 }
 
 
@@ -340,20 +314,11 @@ header .presentation p a:hover {
   flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
-  padding: 5% 0;
-  height: 100vh;
-  background-image: linear-gradient(
-    to right,
-    #ffffff 50%,
-    #f3e5b3 50%
-  );
-  z-index: -100;
-
+  margin: 12% 0 12% 0;
 }
 
 .apropos .skills {
   flex-basis: 50%;
-  color:#ffffff !important;
 }
 
 .apropos .about {
