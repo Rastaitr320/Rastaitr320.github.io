@@ -11,5 +11,100 @@
 </head>
 <body>
   
- 
+  <header>
+    <div class="banner-img">
+
+    </div>
+    <nav>
+      <div class="head-left">
+        <h1>DA</h1>
+        <div class="desc">
+          <h2>Daniel Aimé</h2>
+          <i>Developpeur back-end | Data scientist Junior</i>
+        </div>
+      </div>
+      <div class="menu">
+      </div>
+      <a href="" class="nav-bar">
+        <div class="bar-one"></div>
+        <div class="bar-two"></div>
+        <div class="bar-three"></div>
+      </a>
+    </nav>
+    <!-- presentation daniel aimé -->
+    <div class="presentation">
+      <h5>Bienvenue dans mon site personnel </h5>
+      <h2>
+        Bienvenue dans mon site personnel.</br>
+        Je m'appelle <i>Daniel Aimé</i> ,</br>
+        Développeur web - Apprentis DATA SCIENCE.
+      </h2>
+      <!-- <span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing.
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+        consectetur adipisicing.Lorem ipsum dolor sit amet consectetur adipisicing.
+        Lorem ipsum dolor sit amet
+      </span> -->
+      <p>
+        <a href="#apropos" id="plus">En savoir plus sur moi</a>
+        ou
+        <a href="#" id="cv">Télécharger mon cv</a>
+      </p>
+    </div>
+  </header>
+  <section class="apropos">
+    <div class="skills">
+
+    </div>
+    <div class="about">
+      <h3>A propos de moi</h3>
+      <p>Passionné du développement informatiques.
+        Confiez-moi votre projet informatiques si la techonologie que vous desiriez utiliser dans votre 
+        projet se présente ci-après !!!
+      </p>
+      <span>
+        
+      </span>
+      <p>
+        <a href="mailto:rastaitrbeatz320@gmail.com">rastaitrbeatz320@gmail.com</a>
+        <a href="https://github.com/Rastaitr320/Rastaitr320">github</a>
+        <a href="https://www.linkedin.com/in/tolonjanahary-nandrasanaela-daniel-aim%C3%A9-568193192/">linkdin</a>
+      </p>
+      <button>Téléchargez mon cv</button>
+    </div>
+  </section>
+  <section class="realisations">
+    <div class="professionnel">
+      <h3>Projet réalisé au sein des entreprises public et privée</h3>
+    </div>
+    <div class="perso">
+      <h3>Projet personnel</h3>
+    </div>
+  </section>
+</body>
+<script src="node_modules/TagCloud/dist/TagCloud.min.js"></script>
+<script>
+  const container = '.skills';
+  const texts = [
+      ' </HTML5>', '<?php ?>', '{JavaScript}',
+      '*{CSS3}', 'HTML5', 'ReactJS',
+      'NodeJS', 'Laravel', 'Django',
+      'RESTFull API', 'ExpressJS', 'Git',
+      'SQL', 'Système de recommendation', '-->(Neo4J)',
+      'PostgreSQL', 'MySQL', 'Linux',
+      'Bootstrap', 'MongoDB'
+  ];
+  const options = {
+    radius: 200,
+    maxSpeed: 'medium',
+    initSpeed: 'medium',
+    direction: 135,
+    keep: true
+  };
+
+  TagCloud(container, texts, options);
+  var colors = ['#34A853', '#FBBC05', '#4285F4', '#7FBC00', 'FFBA01', '01A6F0'];
+  var random_color = colors[Math.floor(Math.random() * colors.length)];
+  document.querySelector('.skills').style.color = '01A6F0';
+</script>
 </html>
