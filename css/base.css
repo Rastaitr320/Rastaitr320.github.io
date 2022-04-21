@@ -56,7 +56,7 @@ section {
 }
 
 .header {
-  background-image: url('../images/bg1.jpg');
+  background-image: url('../images/bg2.jpg');
   background-size: cover;
   background-attachment: fixed;
   position:relative;
@@ -76,6 +76,15 @@ section {
   font-size: clamp(15px, 4vw, 34px);
 }
 
+.text-bienvenue .btn-started {
+  margin-top: 10%;
+  font-size: clamp(8px, 4vw, 20px);
+}
+
+.text-bienvenue .btn-started a {
+  text-decoration: none;
+  color:#ff9f23;
+}
 
 .header .bar-menu {
   position:fixed;
