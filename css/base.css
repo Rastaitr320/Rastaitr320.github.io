@@ -141,22 +141,29 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items:center;
-  padding: 15px 25px;
+  align-items:flex-start;
+  padding: 55px 25px 0 25px;
 }
 
 .apropos .about {
-  flex-basis: 32%;
-  font-size: clamp(2px, 4vw, 19px);
+  flex-basis: 37%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: clamp(2px, 4vw, 15px);
+  padding: 10% 0;
 
 }
 
-.apropos .text {
+.apropos .about .text {
   position: relative;
+  width: 44%;
+  margin: 15px 15px;
 }
 
-.apropos .text h2 {
-  margin-bottom: 5%;
+/* .apropos */
+
+.apropos .about .text h2 {
+  margin-bottom: 9%;
 }
 
 .apropos .text div {
@@ -191,7 +198,90 @@ section {
 }
 
 
+.apropos .skills {
+  display: flex;
+  flex-wrap: wrap;
+  height: 75%;
+  width: 63%;
+  /* background-color: #ff9f23; */
 
+}
+
+.apropos .skills div:nth-child(1) {
+  width: 100%;
+  height: 50%;
+  /* background-color: rgb(128, 128, 128); */
+}
+
+.apropos .skills .box1 h3 {
+  text-align:justify;
+  position: relative;
+  padding-bottom: 3%;
+}
+
+.apropos .skills .box1 h3::after {
+  content: "";
+  position:absolute;
+  display: block;
+  top: 25%;
+  left: 18%;
+  width: 80%;
+  height: 2px;
+  background-color: #f7f7f7;
+  font-size: clamp(15px, 4cw, 38px);
+}
+
+.apropos .skills .box1 .skill {
+  font-size: clamp(15px, 4cw, 38px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.box1 .skill ul {
+  list-style-type: none;
+}
+
+.apropos .skills div:nth-child(2) {
+  width: 100%;
+  height: 50%;
+
+  /* background-color: rgb(138, 138, 138); */
+
+}
+
+.apropos .skills .box2 h3 {
+  text-align:right;
+  position: relative;
+  padding-bottom: 3%;
+}
+
+.apropos .skills .box2 h3::after {
+  content: "";
+  position:absolute;
+  display: block;
+  top: 65%;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f7f7f7;
+  font-size: clamp(15px, 4cw, 38px);
+}
+/* .apropos .skills div:nth-child(3) {
+  width: 50%;
+  height: 50%;
+
+  background-color: rgb(148, 148, 148);
+
+}
+.apropos .skills div:nth-child(4) {
+  width: 50%;
+  height: 50%;
+  background-color: rgb(128, 128, 128);
+
+} */
 
 
 .contact {
