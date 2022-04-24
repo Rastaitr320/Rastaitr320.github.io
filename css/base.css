@@ -142,7 +142,7 @@ section {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items:flex-start;
-  padding: 55px 25px 0 25px;
+  padding: 55px 12px 0 25px;
 }
 
 .apropos .about {
@@ -195,6 +195,8 @@ section {
 
 .apropos .img {
   flex-basis: 25%;
+  width: 150px;
+  height: 320px;
 }
 
 
@@ -217,6 +219,7 @@ section {
   text-align:justify;
   position: relative;
   padding-bottom: 3%;
+
 }
 
 .apropos .skills .box1 h3::after {
@@ -224,10 +227,10 @@ section {
   position:absolute;
   display: block;
   top: 25%;
-  left: 18%;
-  width: 80%;
+  left: 17.4%;
+  width: 82%;
   height: 2px;
-  background-color: #f7f7f7;
+  background-color: #ff9f23;
   font-size: clamp(15px, 4cw, 38px);
 }
 
@@ -246,7 +249,7 @@ section {
 
 .apropos .skills div:nth-child(2) {
   width: 100%;
-  height: 50%;
+  height: 80%;
 
   /* background-color: rgb(138, 138, 138); */
 
@@ -256,6 +259,7 @@ section {
   text-align:right;
   position: relative;
   padding-bottom: 3%;
+  color: #ff9f23;
 }
 
 .apropos .skills .box2 h3::after {
@@ -266,9 +270,159 @@ section {
   right: 0;
   width: 100%;
   height: 2px;
-  background-color: #f7f7f7;
+  background-color: #ff9f23;
   font-size: clamp(15px, 4cw, 38px);
 }
+
+.apropos .skills .box2 .project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.apropos .skills .box2 .project .card {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  background-image: url('../images/banner.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment:scroll;
+  mix-blend-mode:exclusion;
+  color: black;
+  position:relative;
+}
+
+.card:hover{
+  color:chocolate;
+  cursor: pointer;
+  scale: 10px;
+  
+}
+
+
+.apropos .skills .box2 .card .nom {
+  color: #f7f7f7;
+  font-size: clamp(5px, 4vw, 12px);
+  /* font-weight: lighter; */
+  text-align: center;
+}
+
+.apropos .skills .box2 .card .type {
+  background: #ff9f23;
+  border-radius:5%;
+  padding: 2px 2px;
+  color: black;
+}
+
+
+@media screen and (max-width:375px) {
+  .apropos {
+    height: calc(100% + 100vh);
+  }
+
+  .apropos .about {
+    flex-basis: 100%;
+  }
+
+  .apropos .skills {
+    width: 100%;
+    height: 62%;
+  }
+
+  .apropos .skills .box1 h3::after {
+    top:38%;
+    left: 34%;
+    width: 70%;
+  }
+
+  .apropos .skills .box2 h3::after {
+    top: 72%;
+  }
+  
+  .apropos .about .text {
+    width: 100%;
+  }
+  
+  .apropos .text {
+
+  }
+
+  .apropos .img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .apropos .skills .box2 .project .card {
+    width: 100%;
+    height: 50%;
+  }
+  
+}
+
+@media screen and (max-width:414px) {
+  .apropos {
+    height: calc(100% + 100vh);
+  }
+
+  .apropos .about {
+    flex-basis: 100%;
+  }
+
+  .apropos .skills {
+    width: 100%;
+    height: 62%;
+  }
+
+  .apropos .skills .box1 h3::after {
+    top:38%;
+    left: 34%;
+    width: 66%;
+  }
+
+  .apropos .skills .box2 h3::after {
+    top: 72%;
+  }
+  
+  .apropos .about .text {
+    width: 100%;
+  }
+
+  .apropos .img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .box1 .skill ul {
+    padding-right: 12px;
+  }
+
+  .apropos .skills .box2 .project .card {
+    width: 100%;
+    height: 50%;
+  }
+
+}
+
+@media screen and (max-width:320px) {
+  .apropos .skills .box1 h3::after {
+    left:38%;
+    width: 62%;
+  }
+
+  .apropos .skills .box2 .project .card {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+
 /* .apropos .skills div:nth-child(3) {
   width: 50%;
   height: 50%;
