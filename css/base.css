@@ -446,6 +446,32 @@ section {
 }
 
 .contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.contact .contact-form .input {
+  width: 80%;
+  /* height: 30px; */
+  outline: none;
+  border:none;
+  border-bottom: 1px solid #ff9f23;
+  border-top:none;
+  background: inherit;
+  color: #f7f7f7;
+  padding: 18px 18px 18px 2px;
+}
+
+.input[type=text],
+.input[type=email] {
+  height: 30px;
+}
+
+.contact .contact-form .btn {
+  width: 80%;
+  padding: 18px 18px;
+  background: #ff9f23;
 }
 
