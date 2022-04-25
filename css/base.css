@@ -463,6 +463,10 @@ section {
   color: #f7f7f7;
   padding: 18px 18px 18px 2px;
 }
+.contact h2,
+.contact span {
+  text-align: center;
+}
 
 .input[type=text],
 .input[type=email] {
@@ -470,8 +474,14 @@ section {
 }
 
 .contact .contact-form .btn {
-  width: 80%;
+  width: 40%;
   padding: 18px 18px;
   background: #ff9f23;
+  border: none;
+  font-size: clamp(22px 4vw 35px);
+}
+
+.contact .contact-form .btn:hover {
+  cursor: pointer;
 }
 
